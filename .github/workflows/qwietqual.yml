@@ -22,7 +22,7 @@ jobs:
         ${GITHUB_WORKSPACE}/sl analyze --strict --wait \
           --app Qwiet-php-GH \
           --tag branch=${{ github.head_ref }} \
-          --php --container 18fgsa/s3-resource $(pwd)
+          --container 18fgsa/s3-resource
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKENQ }}
         SHIFTLEFT_API_HOST: www.shiftleft.io
